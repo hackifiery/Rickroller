@@ -11,7 +11,9 @@
 <body>
 	<button onclick="showVideo()">Generate</button>
 	<div id="video-container">
-		<video autoplay muted>
+	<script>Permissions-Policy: autoplay=(self)</script>
+
+		<video controls autoplay>
 			<source src="rickroll.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 		</video>
