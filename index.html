@@ -11,8 +11,8 @@
 		$buttshadow: #454545
 		$white: white
 		$buttgreen: #4FA86B
-
-
+		
+		
 
 		#rick
 		  visibility: hidden
@@ -104,10 +104,15 @@
 	</style>
 </head>
 <body>
+	<div class="troll" id="troll"y>
+  	Click below
+	</div>
+	<script>document.getElementById("myP").style.visibility = "hidden";</script>
 	<script>
 		function roll() {
   
   			document.getElementById("rick").style.visibility = "visible";
+			document.getElementById("troll").style.visibility = "visible";
   
 			}
 	</script>
@@ -115,7 +120,7 @@
 	<div id="video-container">
 	<script>Permissions-Policy: autoplay=(self)</script>
 
-		<video controls autoplay>
+		<video autoplay>
 			<source src="rickroll.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 		</video>
